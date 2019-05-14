@@ -7,8 +7,8 @@ export class Node<T> {
 }
 
 export class List<T> {
-  head?: Node<T>
-  length: number = 0
+  private head?: Node<T>
+  private length: number = 0
 
   push(value: T) {
     const node = new Node(value)
@@ -22,6 +22,17 @@ export class List<T> {
       this.head = node
     }
   }
+
+  private find(test: (n: Node<T>, i: number)=>boolean) : Node<T>? {
+    let current = this.head
+    if (current !== undefined) {
+      let i = 0
+      while (test(current, i)) current = current.next
+      return current
+    }
+    
+  }
+
   pop(): T | undefined {
     if (this.head) {
         const value = this.head.value

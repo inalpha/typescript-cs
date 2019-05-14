@@ -1,7 +1,7 @@
 {
-  "name": "typescript-algorithms",
+  "name": "typescript-cs",
   "version": "1.0.0",
-  "repository": "git@github.com:inalpha/typescript-algorithms.git",
+  "repository": "git@github.com:inalpha/ttypescript-cs",
   "author": "Mohamed Meftah <mohamed-ted@live.com>",
   "license": "MIT",
   "scripts": {
