@@ -1,0 +1,24 @@
+{
+    "compilerOptions": {
+        "module": "commonjs",
+        "target": "es2017",
+        "strictNullChecks": true,
+        "removeComments": true,
+        "moduleResolution": "node",
+        "noEmitHelpers": true,
+        "preserveConstEnums": false,
+        "importHelpers": false,
+        "isolatedModules": false,
+        "rootDir": "./source",
+        "outDir": "./release",
+        "rootDirs": ["./source", "./tests"],
+        "sourceMap": false,
+        "lib": ["es2017"],
+        "allowJs": false,
+        "declaration": true,
+        "declarationDir": "./release/declaration",
+        "noUnusedLocals": true
+    },
+    "include": ["source/**/*"],
+    "exclude": ["node_modules", "release", "**/*.spec.ts"]
+}
